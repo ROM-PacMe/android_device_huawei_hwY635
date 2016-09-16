@@ -21,14 +21,16 @@
 # inherit from msm8916-common
 -include device/huawei/msm8916-common/BoardConfigCommon.mk
 
+LOCAL_PATH := device/huawei/hwY635
+
 # Assert
 TARGET_OTA_ASSERT_DEVICE := hwY635,hwy635,Y635,y635,Y635-L01,Y635-L02,Y635-L03,Y635-L11,Y635-L21
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_hwY635
-TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
-TARGET_RECOVERY_DEVICE_MODULES := libinit_hwY635
 TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
+TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_hwY635.c
 
 TARGET_KERNEL_CONFIG := cm_hwY635_defconfig
 TARGET_VARIANT_CONFIG := cm_hwY635_defconfig
