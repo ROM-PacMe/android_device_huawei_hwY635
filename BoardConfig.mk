@@ -21,8 +21,6 @@
 # inherit from msm8916-common
 -include device/huawei/msm8916-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/huawei/hwY635
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := hwY635,hwy635,Y635,y635,Y635-L01,Y635-L02,Y635-L03,Y635-L11,Y635-L21
 
